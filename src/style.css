@@ -1,1 +1,127 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: green;
+}
+.bubblesort {
+  margin-top: 30px;
+  margin-left: 30px;
+  color: white;
+}
+
+#numbCards {
+  display: inline;
+  margin-left: 30px;
+  width: 50px;
+  height: 35px;
+  margin-top: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.first-line {
+  display: inline-flex;
+  margin-top: 30px;
+  margin-left: 30px;
+  color: white;
+}
+button {
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 60px;
+  border-radius: 5px;
+  background-color: white;
+  color: red;
+  border-color: red;
+  height: 35px;
+  margin-top: 5px;
+}
+.card {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 220px;
+  width: 150px;
+  font-size: 3rem;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  border-top: 1px solid rgb(216, 216, 216);
+  box-shadow: 1px 5px 10px rgb(18, 65, 7);
+}
+
+.diamond::before {
+  color: red;
+  content: "\2666";
+  width: 40%;
+  height: 100%;
+}
+.diamond::after {
+  color: red;
+  content: "\2666";
+  width: 160%;
+  height: 100%;
+  transform: rotate(180deg);
+}
+.clubs::before {
+  content: "\2663";
+  width: 40%;
+  height: 100%;
+}
+.clubs::after {
+  content: "\2663";
+  width: 160%;
+  height: 100%;
+  transform: rotate(180deg);
+}
+.heart::before {
+  color: red;
+  content: "\2665";
+  width: 40%;
+  height: 100%;
+}
+.heart::after {
+  color: red;
+  content: "\2665";
+  width: 160%;
+  height: 100%;
+  transform: rotate(180deg);
+}
+.spades::before {
+  content: "\2660";
+  width: 40%;
+  height: 100%;
+}
+.spades::after {
+  content: "\2660";
+  width: 160%;
+  height: 100%;
+  transform: rotate(180deg);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
+  grid-auto-flow: dense;
+  grid-auto-rows: 18rem;
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  font-size: 2.5rem;
+}
+ul li:nth-child(1) {
+  font-family: "Franklin Gothic Regular", "Arial Narrow", Arial, sans-serif;
+  color: #fff;
+  list-style: none;
+}
+.origin-container {
+  margin-left: 20px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
+  grid-auto-flow: dense;
+  grid-auto-rows: 18rem;
+  grid-template-columns: repeat(auto-fill, minmax(7.5rem, 1fr));
+}
